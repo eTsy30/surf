@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+}
+.transparentTitle {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  color: #fff;
+  opacity: 0.02;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 156px; /* 78% */
+  text-transform: uppercase;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  margin: 0px;
+  align-items: flex-end;
+  span {
+    margin-right: 0;
+    width: 80px;
+    height: 1px;
+    background: #4af6cd;
+  }
+  .title {
+    color: #fff;
+    font-family: Fira Sans;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}

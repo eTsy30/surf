@@ -1,0 +1,12 @@
+@import './normalize.css';
+@import './styles/variables.scss';
+* {
+  font-family: 'Fira Sans', sans-serif;
+  color: $main-white;
+}
+section {
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}

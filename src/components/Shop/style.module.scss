@@ -1,0 +1,96 @@
+.shopContaoner {
+  width: 100%;
+  background-color: #171919;
+
+  position: relative;
+}
+.mainContainer {
+  height: 700px;
+  background-image: url(../img/shop-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1054.721px 590.022px;
+  background-image: url(../../assets/img/ShopImage.png);
+  margin-top: 230px;
+  padding-left: 133px;
+  padding-right: 83px;
+}
+.arrowContainer {
+  display: flex;
+  gap: 10px;
+  float: right;
+  svg {
+    transform: rotate(180deg);
+    opacity: 0.25;
+  }
+  svg:last-of-type {
+    transform: rotate(0deg);
+    opacity: 0.25;
+  }
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  p {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    text-transform: uppercase;
+  }
+  span {
+    margin-left: 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+
+    text-transform: uppercase;
+  }
+  .priceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .upSide {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: auto;
+    justify-content: flex-end;
+    margin-bottom: 320px;
+    span {
+      display: block;
+      width: 20px;
+      height: 1px;
+      flex-shrink: 0;
+      background-color: white;
+    }
+  }
+  .logoBox {
+    width: 112px;
+    height: 80px;
+    background-color: #4af6cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .logoText {
+    text-align: right;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36px; /* 90% */
+    text-transform: uppercase;
+  }
+}
+.shopWrapper {
+  display: flex;
+}
+
+.rightSide {
+  display: flex;
+  width: 33%;
+  align-items: flex-end;
+  justify-content: space-around;
+}

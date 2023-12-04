@@ -1,0 +1,138 @@
+.surContainer {
+  width: 100%;
+  height: 100vh;
+  background: #171919;
+  position: relative;
+}
+.shapePoint {
+  position: absolute;
+  right: -70px;
+  top: 220px;
+  width: 294px;
+  height: 350px;
+
+  path {
+    fill: rgba(218, 218, 218, 0.1);
+  }
+}
+.surfTitle {
+  text-align: right;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 86px; /* 215% */
+  text-transform: uppercase;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: -15%;
+  right: 0px;
+}
+.geoPosition {
+  position: absolute;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  right: -164px;
+  top: 50%;
+  color: rgba(218, 218, 218, 0.5);
+}
+.dotsMap {
+  width: 100%;
+  height: 100%;
+  max-width: 1259px;
+  max-height: 665.024px;
+}
+.mapContainer {
+  position: relative;
+  max-width: 1229px;
+  max-height: 634.024px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  padding: 0 15px;
+  margin-top: 350px;
+}
+.serfPoint:hover::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 15px solid #4af6cd;
+  border-radius: 72%;
+  position: absolute;
+  top: -7px;
+}
+.innerDiv {
+  position: relative;
+  top: -35px;
+}
+.serfPoint .innerDiv {
+  display: none;
+}
+.serfPoint:hover .innerDiv {
+  display: block;
+}
+.serfPoint {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 51%;
+  left: -1%;
+  width: 24px;
+  height: 24px;
+  background-color: #4af6cd;
+  border-radius: 50%;
+  z-index: 3;
+  -webkit-box-shadow: 0px 0px 19px rgba(74, 246, 205, 0.84);
+  box-shadow: 0px 0px 19px rgba(74, 246, 205, 0.84);
+}
+
+.serfPoint:nth-child(2) {
+  top: 43%;
+  left: 11%;
+}
+.serfPoint:nth-child(3) {
+  top: 50%;
+  left: 28%;
+}
+.serfPoint:nth-child(4) {
+  top: 33%;
+  left: 46%;
+}
+.serfPoint:nth-child(5) {
+  top: 80%;
+  left: 34%;
+}
+.serfPoint:nth-child(6) {
+  top: 89%;
+  left: 53%;
+}
+.serfPoint:nth-child(7) {
+  top: 63%;
+  left: 67%;
+}
+.serfPoint:nth-child(8) {
+  top: 46%;
+  left: 85%;
+}
+.serfPoint:nth-child(9) {
+  top: 78%;
+  left: 90.5%;
+}

@@ -1,0 +1,48 @@
+.footerContainer {
+  width: 100%;
+  margin: auto;
+  background-color: #171919;
+  padding-top: 300px;
+}
+.title {
+  opacity: 0.5;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.upSide {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: white;
+  }
+}
+.logoBox {
+  width: 111px;
+  height: 64px;
+  background-color: #4af6cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.logoText {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 150% */
+  text-transform: uppercase;
+}
