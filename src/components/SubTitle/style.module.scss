@@ -13,7 +13,11 @@
   line-height: 156px; /* 78% */
   text-transform: uppercase;
 }
-
+@media (max-width: 768px) {
+  .transparentTitle {
+    font-size: 150px;
+  }
+}
 .titleContainer {
   display: flex;
   justify-content: flex-end;
@@ -29,12 +33,28 @@
     height: 1px;
     background: #4af6cd;
   }
+}
+
+.title {
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .titleContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 23px;
+    flex-direction: column;
+    span {
+      width: 40px;
+    }
+  }
   .title {
-    color: #fff;
-    font-family: Fira Sans;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-size: 60px;
   }
 }

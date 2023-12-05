@@ -5,6 +5,7 @@ import { PlainTitle } from '@components/PlainTitle/PlainTitle';
 import { SubTitle } from '@components/SubTitle/SubTitle';
 import { Title } from '@components/Title/Title';
 
+import { scrollToFooter } from '../../helper/Scroll';
 import { plane } from '../../MOCK/Plane';
 import styles from './style.module.scss';
 export const Travel = () => {
@@ -37,14 +38,16 @@ export const Travel = () => {
           return <PlainTitle title={item.title} subTitle={item.supTitle} key={index} />;
         })}
       </div>
-      <div className={styles.upSide}>
-        <div className={styles.logoBox}>
-          <p className={styles.logoText}>surf</p>
-          <Arrow />
-        </div>
-        <span />
-        <p className={styles.logoText}> go</p>
-      </div>
+      <a href="#main" data-scroll="true" onClick={scrollToFooter}>
+        <div className={styles.upSide}>
+          <div className={styles.logoBox}>
+            <p className={styles.logoText}>surf</p>
+            <Arrow />
+          </div>
+          <span />
+          <p className={styles.logoText}> go</p>
+        </div>{' '}
+      </a>{' '}
       <div className={styles.coctail}></div>
     </section>
   );

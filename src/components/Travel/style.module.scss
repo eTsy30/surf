@@ -17,6 +17,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .imageBackground {
+    padding: 50px 84px 0px 70px;
+  }
+}
 .arrowContainer {
   display: flex;
   gap: 10px;
@@ -106,11 +111,21 @@
   bottom: 745px;
   right: 0;
 }
+@media (max-width: 768px) {
+  .plane {
+    display: none;
+  }
+}
 .aboutPlain {
   display: flex;
   width: 90%;
   margin-top: 75px;
   margin: 75px auto;
+}
+@media (max-width: 768px) {
+  .aboutPlain {
+    flex-wrap: wrap;
+  }
 }
 .upSide {
   display: flex;
@@ -154,4 +169,12 @@
   height: 564px;
   top: 75%;
   right: -244px;
+}
+@media (max-width: 768px) {
+  .coctail {
+    display: none;
+  }
+  .upSide {
+    margin-bottom: 100px;
+  }
 }

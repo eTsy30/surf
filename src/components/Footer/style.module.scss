@@ -46,3 +46,8 @@
   line-height: 48px; /* 150% */
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .footerContainer {
+    padding-top: 100px;
+  }
+}

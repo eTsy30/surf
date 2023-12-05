@@ -6,6 +6,7 @@ import { SubTitle } from '@components/SubTitle/SubTitle';
 import { Title } from '@components/Title/Title';
 import React from 'react';
 
+import { scrollToFooter } from '../../helper/Scroll';
 import { shop } from '../../MOCK/Shop';
 import styles from './style.module.scss';
 export const Shop = () => {
@@ -27,14 +28,16 @@ export const Shop = () => {
               <p>$799</p>
               <span>99</span>
             </div>
-            <div className={styles.upSide}>
-              <div className={styles.logoBox}>
-                <p className={styles.logoText}>in</p>
-                <Arrow />
+            <a href="#main" data-scroll="true" onClick={scrollToFooter}>
+              <div className={styles.upSide}>
+                <div className={styles.logoBox}>
+                  <p className={styles.logoText}>in</p>
+                  <Arrow />
+                </div>
+                <span />
+                <p className={styles.logoText}>drop</p>
               </div>
-              <span />
-              <p className={styles.logoText}>drop</p>
-            </div>
+            </a>
           </div>
           <div className={styles.centre}>
             {' '}

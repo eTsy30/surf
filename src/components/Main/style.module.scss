@@ -58,7 +58,7 @@
   gap: 40px;
 }
 .transparentTitle {
-  font-size: 200px;
+  font-size: 10rem;
   font-style: normal;
   font-weight: 800;
   line-height: 156px; /* 78% */
@@ -94,5 +94,18 @@
   }
   img:first-of-type {
     transform: rotate(-180deg);
+  }
+}
+@media (max-width: 1300px) {
+  .wrapperTabs {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .smallRoad {
+    display: none;
+  }
+  .mainWrapper {
+    padding: 0px 20px 20px 0px;
   }
 }

@@ -11,13 +11,17 @@ import SurfCard from '@assets/icon/SurfCard.svg?react';
 import Water from '@assets/icon/Water.svg?react';
 import Wind from '@assets/icon/Wind.svg?react';
 
+import { scrollToFooter } from '../../helper/Scroll';
 import styles from './style.module.scss';
 export const BeachCard: FC<Iprops> = ({ title, country, surf, tide, wind }) => {
   return (
     <div className={styles.container}>
       <div className={styles.titleContainer}>
         <h4>{title} </h4>
-        <Arrow />
+        <a href="#main" data-scroll="true" onClick={scrollToFooter}>
+          {' '}
+          <Arrow />
+        </a>
       </div>
       <span className={styles.line}></span>
       <p className={styles.subTitle}>{country}</p>

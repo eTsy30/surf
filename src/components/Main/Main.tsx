@@ -2,13 +2,12 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import Arrow from '@assets/icon/Arrow.svg';
 import DownArrow from '@assets/icon/DownArrows.svg';
-import BigRoad from '@assets/img/BigRoadShape.svg';
 import { SideBar } from '@components/SideBar/SideBar';
 import { Tab } from '@components/Tab/Tab';
 import { Title } from '@components/Title/Title';
-import React from 'react';
-import { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
+import { scrollToFooter } from '../../helper/Scroll';
 import styles from './style.module.scss';
 
 const tabsCountry = [
@@ -42,14 +41,9 @@ export const Main = () => {
   const handleTabClick = (index: number) => {
     setActiveTab(index);
   };
-  const scrollToFooter = () => {
-    const footer = document.getElementById('footer');
-    if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
   return (
-    <main className={styles.mainContainer}>
+    <main className={styles.mainContainer} id="main">
       <h1 className={styles.transparentTitle}>go surf</h1>
       <div className={styles.arrowNawigation}>
         <img

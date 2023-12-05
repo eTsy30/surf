@@ -8,23 +8,28 @@ import Surf from '@assets/icon/Surf.svg';
 import Travel from '@assets/icon/Travel.svg';
 import { FC } from 'react';
 
+import { scrollToFooter } from '../../helper/Scroll';
 import styles from './style.module.scss';
 const tabs = [
   {
     icon: Surf,
     text: 'Surf',
+    link: '#surf',
   },
   {
     icon: Travel,
     text: 'Travel',
+    link: '#travel',
   },
   {
     icon: Sleep,
     text: 'Sleep',
+    link: '#sleep',
   },
   {
     icon: Shop,
     text: 'Shop',
+    link: '#shop',
   },
   {
     icon: Search,
@@ -51,7 +56,10 @@ export const SideBar: FC = () => {
           {tabs.map((tab, index) => {
             return (
               <div key={index}>
-                <img src={tab.icon} alt="" />
+                <a href={tab.link} data-scroll="true" onClick={scrollToFooter}>
+                  <img src={tab.icon} alt="" />
+                </a>
+
                 <span>{tab.text}</span>
               </div>
             );

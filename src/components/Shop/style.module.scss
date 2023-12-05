@@ -1,7 +1,6 @@
 .shopContaoner {
   width: 100%;
   background-color: #171919;
-
   position: relative;
 }
 .mainContainer {
@@ -93,4 +92,33 @@
   width: 33%;
   align-items: flex-end;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .shopWrapper {
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .rightSide {
+    gap: 30px;
+  }
+  .mainContainer {
+    margin-top: 230px;
+    padding-left: 133px;
+    padding-right: 83px;
+  }
+  .mainContainer {
+    height: 100%;
+  }
+  .priceContainer {
+    align-items: center;
+  }
+  .upSide {
+    justify-content: center !important ;
+    align-items: center !important;
+    margin-bottom: 80px !important;
+  }
+  .arrowContainer {
+    display: none;
+  }
 }
