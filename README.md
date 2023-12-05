@@ -1,6 +1,6 @@
 # Surfing Website Project
 
-![Surfing Website](surf/resources/screenshot.png)
+![Surfing Website](resources/screenshot.png)
 
 This is a pet-project aimed at creating a surfing website using HTML, SCSS, and React.
 
